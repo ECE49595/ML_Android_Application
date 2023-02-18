@@ -17,4 +17,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload APK
-      uses: actions/upload-artifact@v3.1.12
+      uses: actions/upload-artifact@v3.1.2
