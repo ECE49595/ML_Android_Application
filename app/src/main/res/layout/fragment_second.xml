@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/worldIV"
         android:layout_width="349dp"
         android:layout_height="147dp"
         android:src="@drawable/worldmap"

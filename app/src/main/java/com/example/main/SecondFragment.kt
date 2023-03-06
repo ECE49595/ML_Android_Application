@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.Recycler
 import com.example.main.databinding.FragmentSecondBinding
 
 /**
@@ -53,6 +55,10 @@ class SecondFragment : Fragment(){
                     val treeInfo = binding.root.findViewById<TextView>(R.id.paragraphTreeInfoTV)
                     val treeImage = binding.root.findViewById<ImageView>(R.id.treeIV)
                     val indianaMap = binding.root.findViewById<ImageView>(R.id.indianaIV)
+                    val worldMap = binding.root.findViewById<ImageView>(R.id.worldIV)
+                    val treeImageBackground = binding.root.findViewById<RecyclerView>(R.id.recyclerView2)
+                    val indianaImageBackground = binding.root.findViewById<RecyclerView>(R.id.recyclerView3)
+                    val generalInfo = binding.root.findViewById<TextView>(R.id.generalInfoTV)
 
                     // Get String array for component text/image replacement
                     val trees = resources.getStringArray(R.array.arTrees)
@@ -64,6 +70,10 @@ class SecondFragment : Fragment(){
                             treeInfo?.visibility = View.INVISIBLE
                             treeImage?.visibility = View.INVISIBLE
                             indianaMap?.visibility = View.INVISIBLE
+                            worldMap?.visibility = View.INVISIBLE
+                            treeImageBackground?.visibility = View.INVISIBLE
+                            indianaImageBackground?.visibility = View.INVISIBLE
+                            generalInfo?.visibility = View.INVISIBLE
                     }
                     else{
                             treeName?.visibility = View.VISIBLE
@@ -71,8 +81,13 @@ class SecondFragment : Fragment(){
                             treeInfo?.visibility = View.VISIBLE
                             treeImage?.visibility = View.VISIBLE
                             indianaMap?.visibility = View.VISIBLE
+                            worldMap?.visibility = View.VISIBLE
+                            treeImageBackground?.visibility = View.VISIBLE
+                            indianaImageBackground?.visibility = View.VISIBLE
                             treeName?.text = trees[position]
                             latinTreeName?.text = latinTrees[position]
+                            generalInfo?.visibility = View.VISIBLE
+
                     }
                     if (position == 1){
                         treeImage.setImageResource(R.drawable.sugar_maple)
