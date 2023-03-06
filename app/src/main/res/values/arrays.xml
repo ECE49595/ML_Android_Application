@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <integer-array name="treePhotos">
+        <item>@drawable/sampletree</item>
+        <item>@drawable/sugar_maple</item>
+        <item>@drawable/red_maple</item>
+        <item>@drawable/black_cherry</item>
+        <item>@drawable/white_ash</item>
+        <item>@drawable/yellow_poplar</item>
+    </integer-array>
+</resources>
