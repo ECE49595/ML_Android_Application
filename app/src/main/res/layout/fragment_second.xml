@@ -23,7 +23,7 @@
         android:id="@+id/treeNameTV"
         android:layout_width="414dp"
         android:layout_height="61dp"
-        android:text="Black Cherry"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="48sp"
@@ -46,10 +46,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/treeNameLatinTV"
         android:layout_width="387dp"
         android:layout_height="36dp"
-        android:text="Prunus serotina"
+        android:text="Latin Tree Name"
         android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="italic"
@@ -68,13 +68,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/paragraphTreeInfoTV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/spTree"
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/generalInfoTV"
         android:layout_width="209dp"
         android:layout_height="24dp"
         android:text="General Information"
@@ -89,31 +89,31 @@
         app:layout_constraintVertical_bias="0.98" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="175dp"
-        android:layout_height="251dp"
+        android:id="@+id/indianaIV"
+        android:layout_width="180dp"
+        android:layout_height="210dp"
         android:src="@drawable/inmap"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/generalInfoTV"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/treeIV"
+        app:layout_constraintTop_toBottomOf="@+id/treeNameLatinTV"
         app:layout_constraintVertical_bias="0.607" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="167dp"
-        android:layout_height="258dp"
+        android:id="@+id/treeIV"
+        android:layout_width="169dp"
+        android:layout_height="200dp"
         android:src="@drawable/sampletree"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/generalInfoTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.009"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/generalInfoTV"
+        app:layout_constraintTop_toBottomOf="@+id/treeNameLatinTV"
         app:layout_constraintVertical_bias="0.568" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/paragraphTreeInfoTV"
         android:layout_width="340dp"
         android:layout_height="274dp"
         android:text="This is a test paragraph to see how it will look whenever I upload it to my phone. The normal information here would be all about the black cherry tree. the hope is that we can get at least 5 to 6 sentences of basic information here and attach a url for the wiki page for those more interested in  learning more about a specific tree. It would seem that I have underestimated the actual amount of space that the text will take up, we can easily fit anywhere from 10 to 12 sentences within this space. Hopefully that will be a good amount for the user to learn about the tree that has been selected. Still have a little bit of room left, should we add more text? Or make it smaller and add a few more pictures? Who knows, we shall see once we go ahead and build this sample application."

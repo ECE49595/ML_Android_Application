@@ -13,7 +13,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.main.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
@@ -34,15 +34,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
-        val trees = resources.getStringArray(R.array.arTrees)
-        val spinner = findViewById<Spinner>(R.id.spinner)
-        if (spinner != null) {
-            val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, trees).also {
-                adapter -> adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            }
-            spinner.adapter = adapter
-            spinner.onItemSelectedListener = this
-        }
+
         return true
     }
 
@@ -62,14 +54,5 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 || super.onSupportNavigateUp()
     }
 
-    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val x = 1
-        val tv = findViewById<TextView>(R.id.textView2)
-        val trees = resources.getStringArray(R.array.arTrees)
-        tv.text = trees[position]
 
-    }
-
-    override fun onNothingSelected(p0: AdapterView<*>?) {
-    }
 }

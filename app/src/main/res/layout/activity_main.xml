@@ -25,20 +25,4 @@
         android:id="@+id/include"
         layout="@layout/content_main" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:entries="@array/arTrees"
-        app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="center" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="164dp"
-        app:layout_anchorGravity="center"
-        app:layout_anchor="@+id/include"
-        android:text="TextView"/>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
