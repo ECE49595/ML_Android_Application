@@ -10,4 +10,11 @@
     <color name="Primary1">#FF2E933C</color>
     <color name="wiki_background">#FFB8CDBC</color>
     <color name="Primary2">#FF573D1C</color>
+
+    <!-- Arbr color palette -->
+    <color name="green">#5a6b47</color>
+    <color name="sage">#a1a48f</color>
+    <color name="tan">#dabf94</color>
+    <color name="light_brown">#9c794f</color>
+    <color name="brown">#3f3222</color>
 </resources>
