@@ -72,6 +72,7 @@
         android:id="@+id/spTree"
         android:layout_width="386dp"
         android:layout_height="46dp"
+        android:background="@color/green"
         android:entries="@array/arTrees"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
