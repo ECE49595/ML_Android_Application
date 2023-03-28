@@ -26,6 +26,7 @@ import com.example.main.R
 import org.tensorflow.lite.task.vision.classifier.Classifications
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
+import androidx.navigation.fragment.findNavController
 
 class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
 
@@ -76,6 +77,17 @@ class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
     ): View {
         _fragmentCameraBinding = FragmentCameraBinding.inflate(inflater, container, false)
 
+        fragmentCameraBinding.recyclerviewResults.setOnTouchListener { view, motionEvent ->
+            if (motionEvent.action == MotionEvent.ACTION_UP)
+                view.performClick()
+            else
+                false
+        }
+
+        fragmentCameraBinding.recyclerviewResults.setOnClickListener { view ->
+            findNavController().navigate(R.id.action_camera_fragment_to_secondFragment)
+        }
+
         return fragmentCameraBinding.root
     }
 
@@ -90,6 +102,8 @@ class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = classificationResultsAdapter
         }
+
+
 
         cameraExecutor = Executors.newSingleThreadExecutor()
 

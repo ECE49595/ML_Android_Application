@@ -28,25 +28,35 @@
 <!--    <include-->
 <!--        android:id="@+id/bottom_sheet_layout"-->
 <!--        layout="@layout/info_bottom_sheet" />-->
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="3dp"
-        android:background="#dabf96"
-        app:layout_anchor="@id/recyclerview_results"
-        app:layout_anchorGravity="top" />
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="3dp"-->
+<!--        android:background="#dabf96"-->
+<!--        app:layout_anchor="@id/recyclerview_results"-->
+<!--        app:layout_anchorGravity="top" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="0dp"
         android:background="#5a6b47"
         android:clipToPadding="true"
         android:padding="15dp"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_anchor="@id/view_finder"
         app:layout_anchorGravity="bottom"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
+    <View
+        android:id="@+id/touch_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_results"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview_results"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerview_results"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_results"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
