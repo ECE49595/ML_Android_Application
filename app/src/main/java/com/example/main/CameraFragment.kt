@@ -27,6 +27,7 @@ import org.tensorflow.lite.task.vision.classifier.Classifications
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import androidx.navigation.fragment.findNavController
+import com.example.main.SecondFragment
 
 class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
 
@@ -70,6 +71,7 @@ class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
         cameraExecutor.shutdown()
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -85,6 +87,7 @@ class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
         }
 
         fragmentCameraBinding.recyclerviewResults.setOnClickListener { view ->
+//            SecondFragment.spinner
             findNavController().navigate(R.id.action_camera_fragment_to_secondFragment)
         }
 

@@ -24,6 +24,7 @@ class SecondFragment : Fragment(){
     private var v: View? = null
 
     private val binding get() = _binding!!
+//    public val spinner = R.id.spTree
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
