@@ -7,6 +7,7 @@ import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.main.databinding.FragmentFirstBinding
@@ -35,6 +36,14 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val toolbar = binding.toolbar
+        (requireActivity() as AppCompatActivity).setSupportActionBar(toolbar)
+
+        val logo = binding.logo
+        logo.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_InfoFragment)
+        }
+
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
@@ -59,4 +68,5 @@ class FirstFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
