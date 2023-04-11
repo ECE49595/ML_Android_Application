@@ -9,4 +9,43 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string-array name="arTrees">
+        <item>Select a tree to learn more!</item>
+        <item>Sugar Maple</item>
+        <item>Red Maple</item>
+        <item>Black Cherry</item>
+        <item>White Ash</item>
+        <item>Yellow Poplar</item>
+    </string-array>
+    <string-array name="trees">
+        <item>Sugar Maple</item>
+        <item>Red Maple</item>
+        <item>Black Cherry</item>
+        <item>White Ash</item>
+        <item>Yellow Poplar</item>
+    </string-array>
+    <string-array name="arLatinTrees">
+        <item>Wiki Tree: Latin Tree Name</item>
+        <item>Acer saccharum</item>
+        <item>Acer rubrum</item>
+        <item>Prunus serotina</item>
+        <item>Fraxinus americana</item>
+        <item>Liriodendron tulipifera</item>
+    </string-array>
+    <string-array name="treeInformation1">
+        <item>This will be the first paragraph regarding our tree</item>
+        <item>First paragraph for Sugar Maple Tree</item>
+        <item>First paragraph for Red Maple Tree</item>
+        <item>First paragraph for Black Cherry Tree</item>
+        <item>First paragraph for White Ash Tree</item>
+        <item>First paragraph for Yellow Poplar Tree</item>
+    </string-array>
+    <string-array name="treeInformation2">
+        <item>This will be the second paragraph regarding our tree</item>
+        <item>Second paragraph for Sugar Maple Tree</item>
+        <item>Second paragraph for Red Maple Tree</item>
+        <item>Second paragraph for Black Cherry Tree</item>
+        <item>Second paragraph for White Ash Tree</item>
+        <item>Second paragraph for Yellow Poplar Tree</item>
+    </string-array>
 </resources>
