@@ -5,15 +5,21 @@ Project Members:
 Hugo Day, Gabby Whitis, B.J. Pemberton
 
 Project Description:
-Our project is an android application that uses machine learning models to process camera input and identify trees based on a dataset that we collected ourselves.
+- Our project is an android application that uses machine learning models to process camera input and identify trees based on a dataset that we collected ourselves.
 
 Features:
-Android Application that uses the camera to get data input for machine learning model. The machine learning model processes the data input, and returns data output. The data output gives us confidence intervals to figure out what tree the data input most likely is. This data is processed and continuously updated and displayed at the bottom of the main app screen. This allows the user to be able to see what type of tree they are most likely looking at. The second screen is a wikipedia esque page about each type of tree.
+- Android Application that uses the camera to get data input for machine learning model. The machine learning model processes the data input, and returns data output. The data output gives us confidence intervals to figure out what tree the data input most likely is. This data is processed and continuously updated and displayed at the bottom of the main app screen. This allows the user to be able to see what type of tree they are most likely looking at. The second screen is a wikipedia esque page about each type of tree.
 
-One main drawback is that our database is not yet fully equipped. We currently have 7 types of trees within our database. If a tree the camera is shown is not one of these 7, then it will just show whatever tree it mostly closely looks like.
+- One main drawback is that our database is not yet fully equipped. We currently have 7 types of trees within our database. If a tree the camera is shown is not one of these 7, then it will just show whatever tree it mostly closely looks like.
 
 Trees currently in Database:
-Sugar maple, Red maple, Redbud, Black cherry, Black Walnut, White ash, Yellow poplar
+- Sugar maple
+- Red maple
+- Redbud
+- Black cherry
+- Black Walnut
+- White ash
+- Yellow poplar
 
 Requirements:
 1. Identification accuracy: application accurately displays top 3 most likely tree matches with percentage of confidence
