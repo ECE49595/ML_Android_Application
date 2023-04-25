@@ -7,50 +7,22 @@
     android:background="@color/sage">
 <!--    tools:context=".SecondFragment">-->
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView3"
-        android:layout_width="174dp"
-        android:layout_height="211dp"
-        android:background="@color/brown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generalInfoTV"
-        app:layout_constraintVertical_bias="0.492" />
-
     <TextView
         android:id="@+id/paragraphTreeInfoTV"
-        android:layout_width="370dp"
-        android:layout_height="168dp"
+        android:layout_width="378dp"
+        android:layout_height="342dp"
         android:background="@color/green"
         android:paddingLeft="4dp"
         android:text="This is a test paragraph to see how it will look whenever I upload it to my phone. The normal information here would be all about the black cherry tree. the hope is that we can get at least 5 to 6 sentences of basic information here and attach a url for the wiki page for those more interested in  learning more about a specific tree. It would seem that I have underestimated the actual amount of space that the text will take up, we can easily fit anywhere from 10 to 12 sentences within this space."
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generalInfoTV"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/treeNameLatinTV"
-        android:layout_width="387dp"
-        android:layout_height="36dp"
-        android:text="Latin Tree Name"
-        android:textAlignment="center"
-        android:textColor="@color/light_brown"
-        android:textSize="28sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
 
     <TextView
         android:id="@+id/treeNameTV"
@@ -68,32 +40,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <TextView
+        android:id="@+id/treeNameLatinTV"
+        android:layout_width="387dp"
+        android:layout_height="36dp"
+        android:text="Latin Tree Name"
+        android:textAlignment="center"
+        android:textColor="@color/light_brown"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
     <Spinner
         android:id="@+id/spTree"
-        android:layout_width="386dp"
-        android:layout_height="46dp"
+        android:layout_width="385dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
         android:background="@color/green"
         android:entries="@array/arTrees"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
-        android:layout_width="174dp"
-        android:layout_height="211dp"
-        android:background="@color/brown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/generalInfoTV"
-        app:layout_constraintVertical_bias="0.492" />
-
     <TextView
         android:id="@+id/generalInfoTV"
-        android:layout_width="195dp"
+        android:layout_width="377dp"
         android:layout_height="22dp"
         android:text="General Information"
         android:textAlignment="textStart"
@@ -102,25 +79,39 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/treeNameLatinTV"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="181dp"
+        android:layout_height="216dp"
+        android:background="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalInfoTV"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="190dp"
+        android:layout_height="217dp"
+        android:background="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalInfoTV"
+        app:layout_constraintVertical_bias="0.95" />
 
     <ImageView
-        android:id="@+id/treeIV"
-        android:layout_width="166dp"
+        android:id="@+id/worldIV"
+        android:layout_width="161dp"
         android:layout_height="196dp"
-        android:src="@drawable/sampletree"
-        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView2"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView2"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView2" />
-
-    <ImageView
-        android:id="@+id/indianaIV"
-        android:layout_width="154dp"
-        android:layout_height="191dp"
 
         android:src="@drawable/inmap"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerView3"
@@ -130,13 +121,14 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <ImageView
-        android:id="@+id/worldIV"
-        android:layout_width="349dp"
-        android:layout_height="147dp"
-        android:src="@drawable/worldmap"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView3" />
+        android:id="@+id/treeIV"
+        android:layout_width="166dp"
+        android:layout_height="196dp"
+        android:src="@drawable/sampletree"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView2"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView2"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView2"
+        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

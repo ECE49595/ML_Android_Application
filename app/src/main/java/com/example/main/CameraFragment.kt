@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import android.util.Log
 import android.view.*
-import android.widget.AdapterView
 import android.widget.Toast
 import androidx.camera.core.AspectRatio
 import androidx.camera.core.ImageProxy
@@ -21,13 +20,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.main.databinding.FragmentCameraBinding
-import com.example.main.ImageClassifierHelper
-import com.example.main.R
 import org.tensorflow.lite.task.vision.classifier.Classifications
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import androidx.navigation.fragment.findNavController
-import com.example.main.SecondFragment
 
 class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
 
@@ -133,111 +129,6 @@ class CameraFragment : Fragment(), ImageClassifierHelper.ClassifierListener {
             ContextCompat.getMainExecutor(requireContext())
         )
     }
-
-//    private fun initBottomSheetControls() {
-//        // When clicked, lower classification score threshold floor
-//        fragmentCameraBinding.bottomSheetLayout.thresholdMinus.setOnClickListener {
-//            if (imageClassifierHelper.threshold >= 0.1) {
-//                imageClassifierHelper.threshold -= 0.1f
-//                updateControlsUi()
-//            }
-//        }
-//
-//        // When clicked, raise classification score threshold floor
-//        fragmentCameraBinding.bottomSheetLayout.thresholdPlus.setOnClickListener {
-//            if (imageClassifierHelper.threshold < 0.9) {
-//                imageClassifierHelper.threshold += 0.1f
-//                updateControlsUi()
-//            }
-//        }
-//
-//        // When clicked, reduce the number of objects that can be classified at a time
-//        fragmentCameraBinding.bottomSheetLayout.maxResultsMinus.setOnClickListener {
-//            if (imageClassifierHelper.maxResults > 1) {
-//                imageClassifierHelper.maxResults--
-//                updateControlsUi()
-//                classificationResultsAdapter.updateAdapterSize(size = imageClassifierHelper.maxResults)
-//            }
-//        }
-//
-//        // When clicked, increase the number of objects that can be classified at a time
-//        fragmentCameraBinding.bottomSheetLayout.maxResultsPlus.setOnClickListener {
-//            if (imageClassifierHelper.maxResults < 3) {
-//                imageClassifierHelper.maxResults++
-//                updateControlsUi()
-//                classificationResultsAdapter.updateAdapterSize(size = imageClassifierHelper.maxResults)
-//            }
-//        }
-//
-//        // When clicked, decrease the number of threads used for classification
-//        fragmentCameraBinding.bottomSheetLayout.threadsMinus.setOnClickListener {
-//            if (imageClassifierHelper.numThreads > 1) {
-//                imageClassifierHelper.numThreads--
-//                updateControlsUi()
-//            }
-//        }
-//
-//        // When clicked, increase the number of threads used for classification
-//        fragmentCameraBinding.bottomSheetLayout.threadsPlus.setOnClickListener {
-//            if (imageClassifierHelper.numThreads < 4) {
-//                imageClassifierHelper.numThreads++
-//                updateControlsUi()
-//            }
-//        }
-//
-//        // When clicked, change the underlying hardware used for inference. Current options are CPU
-//        // GPU, and NNAPI
-//        fragmentCameraBinding.bottomSheetLayout.spinnerDelegate.setSelection(0, false)
-//        fragmentCameraBinding.bottomSheetLayout.spinnerDelegate.onItemSelectedListener =
-//            object : AdapterView.OnItemSelectedListener {
-//                override fun onItemSelected(
-//                    parent: AdapterView<*>?,
-//                    view: View?,
-//                    position: Int,
-//                    id: Long
-//                ) {
-//                    imageClassifierHelper.currentDelegate = position
-//                    updateControlsUi()
-//                }
-//
-//                override fun onNothingSelected(parent: AdapterView<*>?) {
-//                    /* no op */
-//                }
-//            }
-//
-//        // When clicked, change the underlying model used for object classification
-//        fragmentCameraBinding.bottomSheetLayout.spinnerModel.setSelection(0, false)
-//        fragmentCameraBinding.bottomSheetLayout.spinnerModel.onItemSelectedListener =
-//            object : AdapterView.OnItemSelectedListener {
-//                override fun onItemSelected(
-//                    parent: AdapterView<*>?,
-//                    view: View?,
-//                    position: Int,
-//                    id: Long
-//                ) {
-//                    imageClassifierHelper.currentModel = position
-//                    updateControlsUi()
-//                }
-//
-//                override fun onNothingSelected(parent: AdapterView<*>?) {
-//                    /* no op */
-//                }
-//            }
-//    }
-//
-//    // Update the values displayed in the bottom sheet. Reset classifier.
-//    private fun updateControlsUi() {
-//        fragmentCameraBinding.bottomSheetLayout.maxResultsValue.text =
-//            imageClassifierHelper.maxResults.toString()
-//
-//        fragmentCameraBinding.bottomSheetLayout.thresholdValue.text =
-//            String.format("%.2f", imageClassifierHelper.threshold)
-//        fragmentCameraBinding.bottomSheetLayout.threadsValue.text =
-//            imageClassifierHelper.numThreads.toString()
-//        // Needs to be cleared instead of reinitialized because the GPU
-//        // delegate needs to be initialized on the thread using it when applicable
-//        imageClassifierHelper.clearImageClassifier()
-//    }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)

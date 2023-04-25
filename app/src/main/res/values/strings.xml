@@ -14,14 +14,20 @@
         <item>Sugar Maple</item>
         <item>Red Maple</item>
         <item>Black Cherry</item>
+        <item>Black Walnut</item>
+        <item>Cedar</item>
         <item>White Ash</item>
+        <item>Redbud</item>
         <item>Yellow Poplar</item>
     </string-array>
     <string-array name="trees">
         <item>Sugar Maple</item>
         <item>Red Maple</item>
         <item>Black Cherry</item>
+        <item>Black Walnut</item>
+        <item>Eastern Red Cedar</item>
         <item>White Ash</item>
+        <item>Eastern Redbud</item>
         <item>Yellow Poplar</item>
     </string-array>
     <string-array name="arLatinTrees">
@@ -29,23 +35,32 @@
         <item>Acer saccharum</item>
         <item>Acer rubrum</item>
         <item>Prunus serotina</item>
+        <item>Juglans nigra</item>
+        <item>Juniperus virginiana</item>
         <item>Fraxinus americana</item>
+        <item>Cercis canadensis</item>
         <item>Liriodendron tulipifera</item>
     </string-array>
     <string-array name="treeInformation1">
         <item>This will be the first paragraph regarding our tree</item>
-        <item>First paragraph for Sugar Maple Tree</item>
-        <item>First paragraph for Red Maple Tree</item>
-        <item>First paragraph for Black Cherry Tree</item>
-        <item>First paragraph for White Ash Tree</item>
-        <item>First paragraph for Yellow Poplar Tree</item>
+        <item>Acer saccharum, the sugar maple, is a species of flowering plant in the soapberry and lychee family Sapindaceae. It is native to the hardwood forests of eastern Canada and eastern United States. Sugar maple is best known for being the primary source of maple syrup and for its brightly colored fall foliage. It may also be known as "rock maple", "sugar tree", "birds-eye maple", "sweet maple", "curly maple", or "hard maple", particularly when referring to the wood. It is a deciduous tree normally reaching heights of 80–115 ft, and exceptionally up to 150 ft. The tree is long-lived, typically 200 years and occasionally as much as 300.</item>
+        <item>Acer rubrum, the red maple, also known as swamp maple, water maple, or soft maple, is one of the most common and widespread deciduous trees of eastern and central North America. The U.S. Forest Service recognizes it as the most abundant native tree in eastern North America. The red maple ranges from southeastern Manitoba around the Lake of the Woods on the border with Ontario and Minnesota, east to Newfoundland, south to Florida, and southwest to East Texas. At maturity, it often attains a height around 100 ft. Its flowers, petioles, twigs, and seeds are all red to varying degrees. Among these features, however, it is best known for its brilliant deep scarlet foliage in autumn.</item>
+        <item>Prunus serotina, commonly called black cherry, wild black cherry, rum cherry, or mountain black cherry, is a deciduous tree or shrub of the genus Prunus. Despite being called black cherry, it is not very closely related to the commonly cultivated cherries such as sweet cherry, sour cherry and Japanese flowering cherries. The species is widespread and common in North America and South America.</item>
+        <item>Black walnut is an important tree commercially, as the wood is a deep brown color and easily worked. Walnut seeds (nuts) are cultivated for their distinctive and desirable taste. Walnut trees are grown both for lumber and food, and many cultivars have been developed for improved quality wood or nuts. They can grow to a height of 100–130 feet.</item>
+        <item>Juniperus virginiana, also known as eastern redcedar, red cedar, Virginian juniper, eastern juniper, red juniper, and other local names, is a species of juniper native to eastern North America from southeastern Canada to the Gulf of Mexico and east of the Great Plains.</item>
+        <item>Fraxinus americana, the white ash or American ash, is a species of ash tree native to eastern and central North America. The species is native to mesophytic hardwood forests from Nova Scotia west to Minnesota, south to northern Florida, and southwest to eastern Texas. Isolated populations have also been found in western Texas, Wyoming, and Colorado, and the species is reportedly naturalized in Hawaii. White ash is one of the most used trees for everyday purposes and, to keep up with high demand, is cultivated almost everywhere possible. It is a traditional timber of choice for production of baseball bats, tool handles, furniture and flooring.</item>
+        <item>Cercis canadensis, the eastern redbud, is a large deciduous shrub or small tree, native to eastern North America from southern Michigan south to central Mexico, west to New Mexico. Species thrive as far west as California and as far north as southern Ontario. It is the state tree of Oklahoma.</item>
+        <item>Liriodendron tulipifera—known as the tulip tree, fiddletree, and yellow-poplar—is the tallest eastern hardwood. It is native to eastern North America and can grow to more than 160 ft in virgin cove forests of the Appalachian Mountains, often with no limbs until it reaches 80–100 ft in height, making it a very valuable timber tree. The tallest individual at the time of 2021 is called the Fork Ridge Tulip Tree at a secret location in the Great Smoky Mountains of North Carolina. It has been shown to be 191 feet 10 inches in height. This is the tallest known individual tree in eastern North America.</item>
     </string-array>
     <string-array name="treeInformation2">
         <item>This will be the second paragraph regarding our tree</item>
-        <item>Second paragraph for Sugar Maple Tree</item>
-        <item>Second paragraph for Red Maple Tree</item>
-        <item>Second paragraph for Black Cherry Tree</item>
-        <item>Second paragraph for White Ash Tree</item>
-        <item>Second paragraph for Yellow Poplar Tree</item>
+        <item>Sugar maple is native to areas with cooler climates and requires a hard freeze each winter for proper dormancy. Seed germination also requires extremely low temperatures, the optimal being just slightly above freezing, and no other known tree species has this property. Germination of sugar maple seed in temperatures above 50 °F is rare to nonexistent.</item>
+        <item>The red maple is adaptable to a very wide range of site conditions. It can be found growing in swamps, on poor, dry soils, and almost anywhere in between. It grows well from sea level to about 3,000 ft. Due to its attractive fall foliage and pleasing form, it is often used as a shade tree for landscapes. It is used commercially for maple syrup production and for its medium to high quality lumber.</item>
+        <item>Black cherry is a medium-sized, fast-growing forest tree growing to a height of 50–80 ft. The leaves are 2–5 inches long and oval in shape. Fall leaf color is yellow to red. Its flowers are small, white and 5-petalled, in racemes 4–6 inches long which contain several dozen flowers. The flowers give rise to reddish-black "berries" fed on by birds. An almond-like odor is released when a young twig is scratched, revealing minute amounts of cyanide compounds produced and stored by the plant as a defense mechanism against herbivores.</item>
+        <item>Black walnut is an important tree commercially, as the wood is a deep brown color and easily worked. Walnut seeds (nuts) are cultivated for their distinctive and desirable taste. Walnut trees are grown both for lumber and food, and many cultivars have been developed for improved quality wood or nuts. The fruit production tends to occur irregularly with some years producing larger crops than others. Fruiting may begin when the tree is 4–6 years old, but large crops take 20 years. Total lifespan of a black walnut tree is about 130 years.</item>
+        <item>Juniperus virginiana is a dense slow-growing coniferous evergreen tree that may never become more than a bush on poor soil, but is ordinarily from 15–65 feet tall, with a short trunk 12–39 inches in diameter, rarely to 90 feet in height. The oldest tree reported, from West Virginia, was 940 years old. The bark is reddish-brown, fibrous, and peels off in narrow strips. The leaves are of two types; sharp, spreading needle-like juvenile leaves, and tightly adpressed scale-like adult leaves. The juniper berry is an important winter food for many birds, which disperse the wingless seeds.</item>
+        <item>The emerald ash borer beetle threatens 7.5 billion ash trees in the United States and the entire North American genus Fraxinus. Since its accidental introduction into the United States and Canada in the 1990s, and its subsequent detection in 2002, it has spread to eleven states and adjacent parts of Canada.</item>
+        <item>The eastern redbud typically grows to 20–30 ft tall with a 26–33 ft spread. It generally has a short, often twisted trunk and spreading branches. The bark is dark in color, smooth, later scaly with ridges somewhat apparent, sometimes with maroon patches. The leaves are alternate, simple, and heart shaped with an entire margin, 3–4.5 inches long and wide, thin and papery, and may be slightly hairy below.The flowers are showy, light to dark magenta pink in color, 1⁄2 inch long, appearing in clusters from spring to early summer, on bare stems before the leaves, sometimes on the trunk itself. The fruit are flattened, dry, brown, pea-like pods, 2–4 inches long that contain flat, elliptical, brown seed, maturing in August to October.</item>
+        <item>It is fast-growing, without the common problems of weak wood strength and short lifespan often seen in fast-growing species. April marks the start of the flowering period in the Southern United States; trees at the northern limit of cultivation begin to flower in June. The flowers are pale green or yellow (rarely white), with an orange band on the tepals; they yield large quantities of nectar. The tulip tree is the state tree of Indiana, Kentucky, and Tennessee.</item>
     </string-array>
 </resources>
